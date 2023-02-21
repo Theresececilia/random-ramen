@@ -1,0 +1,29 @@
+:root {
+  --dark-color: rgba(25,22,32,1);
+  --light-color: rgba(236,200,255,1);
+  --accent-color: rgba(228,18,251,1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root { 
+
+  background-color: var(--dark-color);
+  max-width: 1280px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.App {
+  background-image: url(./assets/ramen.png);
+  background-repeat: no-repeat;
+  background-position: 0 30%;
+  background-size: cover;
+  min-height: 120vh;
+}

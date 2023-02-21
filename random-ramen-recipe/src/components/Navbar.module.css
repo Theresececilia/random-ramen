@@ -1,0 +1,44 @@
+:root {
+    --dark-color: rgba(13,13,16,1);
+    --light-color: rgba(236,200,255,1);
+    --accent-color: rgba(228,18,251,1);
+  }
+
+.navbar {
+    color: var(--light-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    width: 92vw;
+}
+
+.innerNav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.title, 
+.nav {
+    color: var(--accent-color);
+    font-weight: 100;
+    text-shadow: var(--accent-color) 1px 0px 10px;
+    transition: 0.3s;
+}
+
+.title:hover, 
+.nav:hover {
+    text-shadow: var(--light-color) 1px 0px 15px;
+    scale: 1.02;
+}
+
+.title {
+    font-size: 32px;
+}
+
+.yum {
+    font-size: 10px;
+    font-style: italic;
+}
