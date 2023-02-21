@@ -1,0 +1,14 @@
+:root {
+    --dark-color-opacity: rgba(25,22,32,0.8);
+    --light-color: rgba(236,200,255,1);
+    --accent-color: rgba(228,18,251,1);
+  }
+  
+
+.container {
+    background-color: var(--dark-color-opacity);
+    color: var(--light-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+    width: 70%;
+}
