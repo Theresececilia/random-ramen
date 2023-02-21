@@ -5,6 +5,7 @@
 }
 
 body {
+  background-color: var(--dark-color);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -26,4 +27,13 @@ body {
   background-position: 0 30%;
   background-size: cover;
   min-height: 100vh;
+}
+
+
+@media screen and (max-width: 768px) {
+  
+  .App {
+    background-position: 60% 50%;
+  }
+
 }

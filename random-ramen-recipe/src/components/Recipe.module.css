@@ -1,5 +1,5 @@
 :root {
-    --dark-color-opacity: rgba(25,22,32,0.8);
+    --dark-color-opacity: rgba(13,13,16,0.8);
     --light-color: rgba(236,200,255,1);
     --accent-color: rgba(228,18,251,1);
   }
@@ -10,12 +10,12 @@
     color: var(--light-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 100;
+    left: 15%;
     margin: 0 auto;
-    width: 70%;
     position: absolute;
     top: 25%;
-    left: 15%;
     text-align: left;
+    width: 70%;
 }
 
 p, h2, .ramenTitle {
@@ -35,8 +35,8 @@ h2 {
 
 .ramenTitle {
   color: rgb(225, 177, 255);
-  text-align: center;
   font-weight: 400;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -49,17 +49,17 @@ h2 {
 }
 
 .listItems {
-  color: rgba(242,131,252,1) ;
+  color: rgba(242,131,252,1);
+  font-size: 14px;
   list-style-type: none;
   margin: 0 8px 0 0;
-  font-size: 14px;
   text-transform: uppercase;
 }
 
 .list {
+  display: flex;
   margin: 0;
   padding: 8px;
-  display: flex;
   width: 85%;
 }
 
@@ -68,11 +68,52 @@ h2 {
   border: 1px solid var(--accent-color);
   border-radius: 5px;
   color: var(--accent-color);
+  font-size: 16px;
+  letter-spacing: 4px;
   padding: 8px;
   text-align: center;
-  font-size: 16px;
-  width: 100%;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.button:hover {
+  scale: 1.01;
+}
+
+@media screen and (max-width: 768px) {
+  .list {
+    flex-wrap: wrap;
+  }
+
+  p, .instructions {
+    margin: 4px auto;
+  }
+
+  p {
+    margin-bottom: 6px;
+    width: 90%;
+  }
+
+  .ramenTitle {
+    font-size: 24px;
+  }
+
+  .ingredients {
+    margin-top: 65px;
+  }
+
+  .container {
+    left: 15%;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    top: 12%;
+    width: 72%;
+  }
+
+  .button {
+    margin-top: 15px;
+  }
 }
 
