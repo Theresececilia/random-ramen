@@ -4,11 +4,75 @@
     --accent-color: rgba(228,18,251,1);
   }
   
-
 .container {
     background-color: var(--dark-color-opacity);
+    border-radius: 5px;
     color: var(--light-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
     margin: 0 auto;
     width: 70%;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    text-align: left;
 }
+
+p, h2, .ramenTitle {
+  margin: 8px;
+  width: 70%;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.ramenTitle, h2, .listItems {
+  color: var(--light-color);
+  font-weight: 100;
+  text-shadow: var(--accent-color) 1px 0px 10px;
+}
+
+.ramenTitle {
+  color: rgb(225, 177, 255);
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.innerContainer {
+  display: flex;
+}
+
+.ingredients {
+  margin-top: 30px;
+}
+
+.listItems {
+  color: rgba(242,131,252,1) ;
+  list-style-type: none;
+  margin: 0 8px 0 0;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.list {
+  margin: 0;
+  padding: 8px;
+  display: flex;
+  width: 85%;
+}
+
+.button {
+  background-color: var(--dark-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+  color: var(--accent-color);
+  padding: 8px;
+  text-align: center;
+  font-size: 16px;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
